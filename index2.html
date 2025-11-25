@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Pulse - AI-Powered Hypertension Management</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fixed Tailwind CSS - Using proper CDN approach -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fixed Feather Icons - Only include once -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#4C9F70',
+              secondary: '#6EC4DB',
+              accent: '#FF7E5F',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Temporary navbar until component is fixed -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i data-feather="heart" class="text-primary mr-2"></i>
+                    <span class="text-xl font-bold text-gray-800">Nature's Pulse</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#products" class="text-gray-600 hover:text-primary">Products</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-primary">How It Works</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary">Testimonials</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-primary to-secondary text-white pt-16">
+        <div class="container mx-auto px-6 py-24 md:py-32">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Natural Solutions for <span class="text-accent">Healthy Blood Pressure</span></h1>
+                <p class="text-xl md:text-2xl mb-8">AI-optimized natural products that work with your body, not against it</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#products" class="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        Explore Products
+                    </a>
+                    <a href="#how-it-works" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                        How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-16 bg-white transform rotate-1 origin-bottom-left"></div>
+    </section>
+
+    <!-- AI Advantage Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">The <span class="text-primary">AI Difference</span> in Natural Health</h2>
+                    <p class="text-lg text-gray-600 mb-6">Our proprietary AI system analyzes thousands of clinical studies to optimize every formulation for maximum efficacy and affordability.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-2 rounded-full">
+                                <i data-feather="activity" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Evidence-Based Formulas</h3>
+                                <p class="text-gray-600">Continuously updated with the latest hypertension research</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-2 rounded-full">
+                                <i data-feather="dollar-sign" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Cost Optimization</h3>
+                                <p class="text-gray-600">Making natural solutions affordable for everyone</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-primary bg-opacity-10 p-2 rounded-full">
+                                <i data-feather="shield" class="text-primary w-6 h-6"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-900">Safety First</h3>
+                                <p class="text-gray-600">Verified ingredients with batch-level traceability</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gradient-to-br from-secondary to-primary p-1 rounded-2xl shadow-xl">
+                        <div class="bg-white p-4 rounded-xl">
+                            <!-- Replaced broken image with placeholder -->
+                            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg w-full h-64 flex items-center justify-center">
+                                <span class="text-gray-500">AI Analysis Visualization</span>
+                            </div>
+                            <div class="mt-4 p-4 bg-gray-50 rounded-lg">
+                                <div class="flex items-center mb-2">
+                                    <div class="h-3 w-3 rounded-full bg-accent mr-2"></div>
+                                    <span class="text-sm font-medium text-gray-700">AI Formulation Engine</span>
+                                </div>
+                                <div class="h-2 bg-gray-200 rounded-full mb-1">
+                                    <div class="h-2 bg-primary rounded-full w-3/4"></div>
+                                </div>
+                                <div class="flex justify-between text-xs text-gray-500">
+                                    <span>Optimizing...</span>
+                                    <span>74% complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 bg-accent bg-opacity-10 text-accent rounded-full text-sm font-semibold mb-3">Our Products</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Three Powerful <span class="text-primary">Formats</span></h2>
+                <p class="max-w-2xl mx-auto text-lg text-gray-600 mt-4">Designed to fit seamlessly into your daily routine</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Powder Sachets -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="bg-gradient-to-r from-primary to-secondary h-3"></div>
+                    <div class="p-6">
+                        <div class="flex justify-center mb-6">
+                            <!-- Replaced broken image with SVG -->
+                            <div class="w-40 h-40 bg-gradient-to-br from-green-100 to-blue-100 rounded-full flex items-center justify-center">
+                                <i data-feather="package" class="text-primary w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Daily Support Powder</h3>
+                        <p class="text-gray-600 mb-4">Convenient single-serve sachets packed with blood pressure-supporting nutrients</p>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Rich in nitrates and antioxidants</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Easy to mix with water or smoothies</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Great for travel and busy lifestyles</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-900">$0.50<span class="text-sm font-normal text-gray-500">/sachet</span></span>
+                            <button class="bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Softgel Capsules -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="bg-gradient-to-r from-secondary to-accent h-3"></div>
+                    <div class="p-6">
+                        <div class="flex justify-center mb-6">
+                            <!-- Replaced broken image with SVG -->
+                            <div class="w-40 h-40 bg-gradient-to-br from-blue-100 to-pink-100 rounded-full flex items-center justify-center">
+                                <i data-feather="circle" class="text-secondary w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Targeted Softgels</h3>
+                        <p class="text-gray-600 mb-4">Potent herbal extracts in easy-to-take softgel capsules</p>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Standardized for consistent potency</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Enhanced absorption technology</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">No artificial ingredients</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-900">$0.75<span class="text-sm font-normal text-gray-500">/capsule</span></span>
+                            <button class="bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Fresh Juices -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+                    <div class="bg-gradient-to-r from-accent to-primary h-3"></div>
+                    <div class="p-6">
+                        <div class="flex justify-center mb-6">
+                            <!-- Replaced broken image with SVG -->
+                            <div class="w-40 h-40 bg-gradient-to-br from-orange-100 to-green-100 rounded-full flex items-center justify-center">
+                                <i data-feather="droplet" class="text-accent w-16 h-16"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Nutritional Juices</h3>
+                        <p class="text-gray-600 mb-4">Cold-pressed juices with clinically-relevant nutrient levels</p>
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">No added sugars or preservatives</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">High-pressure processed for safety</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i data-feather="check" class="text-primary mr-2 w-4 h-4"></i>
+                                <span class="text-sm text-gray-700">Delicious and refreshing</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-gray-900">$1.25<span class="text-sm font-normal text-gray-500">/bottle</span></span>
+                            <button class="bg-primary hover:bg-opacity-90 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 bg-accent bg-opacity-10 text-accent rounded-full text-sm font-semibold mb-3">Our Process</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Science-Backed <span class="text-primary">Results</span></h2>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="search" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Research</h3>
+                    <p class="text-gray-600">AI analyzes thousands of studies to identify effective natural compounds</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="cpu" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Optimize</h3>
+                    <p class="text-gray-600">Our system calculates optimal dosages and synergistic combinations</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <!-- Fixed: Replaced 'factory' with 'package' -->
+                        <i data-feather="package" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Produce</h3>
+                    <p class="text-gray-600">Manufactured with precision to preserve active compounds</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="heart" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Results</h3>
+                    <p class="text-gray-600">Clinically significant blood pressure improvements in 8-12 weeks</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 bg-accent bg-opacity-10 text-accent rounded-full text-sm font-semibold mb-3">Success Stories</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Real People, <span class="text-primary">Real Results</span></h2>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <!-- Replaced broken image with placeholder -->
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full mr-4 flex items-center justify-center text-white font-bold">MG</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Maria G.</h4>
+                            <div class="flex">
+                                <!-- Fixed star icons -->
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"After 3 months with Nature's Pulse, my blood pressure went from 150/95 to 128/82. I was able to reduce my medication by half!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>3 months on the program</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-full mr-4 flex items-center justify-center text-white font-bold">JT</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">James T.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The powder sachets are so convenient for my busy schedule. I've noticed more energy and my doctor is thrilled with my latest readings."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>5 weeks on the program</span>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-full mr-4 flex items-center justify-center text-white font-bold">SK</div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah K.</h4>
+                            <div class="flex">
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                                <i data-feather="star" class="text-yellow-400 w-4 h-4 fill-current"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Finally a natural option that actually works! The juices are delicious and I love knowing exactly what's in each bottle."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i data-feather="clock" class="w-4 h-4 mr-1"></i>
+                        <span>2 months on the program</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Take Control of Your <span class="text-accent">Heart Health</span>?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands who are managing their blood pressure naturally with science-backed solutions</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#" class="bg-accent hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Get Started
+                </a>
+                <a href="#" class="bg-white hover:bg-gray-100 text-primary font-bold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                    Talk to Our Experts
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temporary footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Nature's Pulse</h3>
+                    <p class="text-gray-400">AI-powered natural solutions for hypertension management.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Products</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Powder Sachets</a></li>
+                        <li><a href="#" class="hover:text-white">Softgel Capsules</a></li>
+                        <li><a href="#" class="hover:text-white">Fresh Juices</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About Us</a></li>
+                        <li><a href="#" class="hover:text-white">Research</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i data-feather="instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nature's Pulse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Initialize Feather Icons after page load
+        document.addEventListener('DOMContentLoaded', function() {
+            if(typeof feather !== 'undefined') {
+                feather.replace();
+            }
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
